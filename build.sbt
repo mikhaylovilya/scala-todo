@@ -8,5 +8,10 @@ lazy val root = project
 
       scalaVersion := scala3Version,
 
-      libraryDependencies += "org.scalameta" %% "munit" % "1.3.0" % Test
+      libraryDependencies += "org.scalameta" %% "munit"       % "1.3.0" % Test,
+      libraryDependencies += "org.typelevel" %% "cats-effect" % "3.7.0",
+      libraryDependencies += "org.tpolecat"  %% "doobie-core" % "1.0.0-RC8",
+      libraryDependencies += "org.tpolecat" %% "doobie-hikari"   % "1.0.0-RC8",
+      libraryDependencies += "org.tpolecat" %% "doobie-postgres" % "1.0.0-RC8",
+      libraryDependencies += "org.tpolecat" %% "doobie-h2"       % "1.0.0-RC8"
     )
